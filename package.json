@@ -1,0 +1,14 @@
+{
+  "name": "timer-mission",
+  "description": "Timer-Mission",
+  "version": "1.0.0",
+  "author": "lZiMUl",
+  "license": "Apache-2.0",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs"
+    }
+  }
+}
