@@ -1,18 +1,8 @@
 # timer-mission
 
-clone warehouse command:
+install the dependency:
 ```
-git clone https://github.com/lzimul/timer-mission.git
-```
-
-initialization command:
-```
-cd timer-mission && npm install
-```
-
-development command:
-```
-npm start
+npm install timer-mission --save
 ```
 
 ### use the instance. 
