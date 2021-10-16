@@ -1,21 +1,21 @@
-# TimerMission
+# timer-mission
 
-Clone Warehouse Command:
+clone warehouse command:
 ```
 git clone https://github.com/lzimul/timer-mission.git
 ```
 
-Initialization Command:
+initialization command:
 ```
 cd timer-mission && npm install
 ```
 
-Development Command:
+development command:
 ```
 npm start
 ```
 
-### Use the instance. 
+### use the instance. 
 ```
 'use strict';
 
@@ -45,6 +45,7 @@ timerMission.addEventListener('goOffWork' function () {
 });
 ```
 
+## or use class
 ```
 'use strict';
 
