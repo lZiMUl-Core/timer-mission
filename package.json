@@ -1,7 +1,7 @@
 {
   "name": "timer-mission",
   "description": "Timer-Mission",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "lZiMUl",
   "license": "Apache-2.0",
   "main": "./lib/index.js",
@@ -24,7 +24,7 @@
     "url": "https://github.com/lZiMUl/timer-mission/issues",
     "email": "AA2908554069@gmail.com"
   },
-  "private": true,
+  "private": false,
   "preferGlobal": true,
   "deprecated": false
 }

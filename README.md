@@ -6,7 +6,7 @@ npm install timer-mission --save
 ```
 
 ### use the instance. 
-```
+```js
 'use strict';
 
 // import dependency
@@ -36,7 +36,7 @@ timerMission.addEventListener('goOffWork' function () {
 ```
 
 ## or use class
-```
+```js
 'use strict';
 
 // import dependency
