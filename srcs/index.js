@@ -16,7 +16,7 @@ class TimerMission extends EventEmitter {
 		}));
 		const result = {
 			list: this.configs,
-			tiemr: this.times(),
+			timer: this.times(),
 			addEventConfiger: config => {
 				this.configs.push(Object.assign(config, {
 					done: false

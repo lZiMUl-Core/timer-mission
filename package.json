@@ -1,7 +1,7 @@
 {
   "name": "timer-mission",
   "description": "Timer-Mission",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "lZiMUl",
   "license": "Apache-2.0",
   "main": "./srcs/index.js",
