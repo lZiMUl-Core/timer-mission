@@ -14,26 +14,26 @@ class TimerMission extends EventEmitter {
 		this.configs = configs.map((value, index) => Object.assign(value, {
 			done: false
 		}));
-		const result = {
-			list: this.configs,
-			timer: this.times(),
-			addEventConfiger: config => {
-				this.configs.push(Object.assign(config, {
-					done: false
-				}));
-			},
-			addEventListener: this.addEventListener,
-			recycle (status) {
-				if(Object.prototype.toString.call(status) === '[object Boolean]')
-				TimerMission.recycle = status;
-			},
-			maximum (numerical) {
-				if(Object.prototype.toString.call(numerical) === '[object Number]')
-				TimerMission.maximum = numerical;
-			},
-			close: this.close
-		};
 		TimerMission.core = setInterval(() => {
+			this.result = {
+				list: this.configs,
+				timer: this.times(),
+				addEventConfiger: config => {
+					this.configs.push(Object.assign(config, {
+						done: false
+					}));
+				},
+				addEventListener: this.addEventListener,
+				recycle (status) {
+					if(Object.prototype.toString.call(status) === '[object Boolean]')
+					TimerMission.recycle = status;
+				},
+				maximum (numerical) {
+					if(Object.prototype.toString.call(numerical) === '[object Number]')
+					TimerMission.maximum = numerical;
+				},
+				close: this.close
+			};
 			this.configs.forEach(({
 				event,
 				timer
@@ -42,10 +42,10 @@ class TimerMission extends EventEmitter {
 				arr[index].done = true;
 				const toNumber = timer.replaceAll(' ', '').split(':').map(value => Number(value));
 				if(this.judge(toNumber))
-				super.emit(event, result);
+				super.emit(event, this.result);
 			});
 			TimerMission.recycleBin.apply(this, [TimerMission.recycle, TimerMission.maximum]);
-			callback? callback(result): null;
+			callback? callback(this.result): null;
 		}, 1000);
 	}
 	
