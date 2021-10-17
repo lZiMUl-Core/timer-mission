@@ -10,11 +10,7 @@ npm install timer-mission --save
 'use strict';
 
 // import dependency
-const TimerMission = require ('timer-mission');
-/**
-* ES6
-* import TimerMission from 'timer-mission';
-*/
+import TimerMission from 'timer-mission';
 
 // setting event
 const timerMission = new TimerMission([{
@@ -40,11 +36,7 @@ timerMission.addEventListener('goOffWork' function () {
 'use strict';
 
 // import dependency
-const TimerMission = require ('timer-mission');
-/**
-* ES6
-* import TimerMission from 'timer-mission';
-*/
+import TimerMission from 'timer-mission';
 
 // definition method class
 class Demo extends TimerMission {

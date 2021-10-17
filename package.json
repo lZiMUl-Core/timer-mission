@@ -1,10 +1,10 @@
 {
   "name": "timer-mission",
   "description": "Timer-Mission",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "lZiMUl",
   "license": "Apache-2.0",
-  "main": "./srcs/index.esm.js",
+  "main": "./srcs/index.js",
   "type": "module",
   "keywords": [
     "lZiMUl",
