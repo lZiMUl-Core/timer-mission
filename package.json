@@ -4,13 +4,8 @@
   "version": "1.0.6",
   "author": "lZiMUl",
   "license": "Apache-2.0",
-  "main": "./srcs/index.js",
-  "exports": {
-    ".": {
-      "require": "./srcs/index.js",
-      "import": "./srcs/index.mjs"
-    }
-  },
+  "main": "./srcs/index.esm.js",
+  "type": "module",
   "keywords": [
     "lZiMUl",
     "timer",

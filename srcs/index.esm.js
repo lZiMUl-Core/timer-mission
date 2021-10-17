@@ -1,14 +1,14 @@
 'use strict';
 
-const {
+import {
 	EventEmitter
-} = require('events');
+} from 'events';
 
 class TimerMission extends EventEmitter {
 	static core = null;
 	static recycle = false;
 	static maximum = 10;
-	
+
 	constructor(configs, callback) {
 		super(...arguments);
 		this.configs = configs.map((value, index) => Object.assign(value, {
@@ -38,7 +38,7 @@ class TimerMission extends EventEmitter {
 				event,
 				timer
 			}, index, arr) => {
-				if(timer.replaceAll(' ', '') === this.times().join(':'))
+			if(timer.replaceAll(' ', '') === this.times().join(':'))
 				arr[index].done = true;
 				const toNumber = timer.replaceAll(' ', '').split(':').map(value => Number(value));
 				if(this.judge(toNumber))
@@ -75,7 +75,7 @@ class TimerMission extends EventEmitter {
 		if(Object.prototype.toString.call(numerical) === '[object Number]')
 		TimerMission.maximum = numerical;
 	}
-	
+
 	static recycleBin(recycle, maximum) {
 		if(recycle && this.configs.length >= maximum)
 		this.configs.forEach((value, index, arr) => {
@@ -89,4 +89,4 @@ class TimerMission extends EventEmitter {
 	}
 };
 
-module.exports = TimerMission;
+export default TimerMission;
