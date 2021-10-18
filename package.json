@@ -6,6 +6,10 @@
   "license": "Apache-2.0",
   "main": "./srcs/index.js",
   "type": "module",
+  "script": {
+    "test": "echo done test",
+    "build": "echo done build"
+  },
   "keywords": [
     "lZiMUl",
     "timer",
@@ -21,5 +25,8 @@
   },
   "private": false,
   "preferGlobal": true,
-  "deprecated": false
+  "deprecated": false,
+  "dependencies": {
+    "events": "^3.3.0"
+  }
 }
