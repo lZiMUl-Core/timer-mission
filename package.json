@@ -7,7 +7,7 @@
   "main": "./srcs/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo done test",
+    "test": "node ./srcs/index.js",
     "build": "echo done build"
   },
   "keywords": [
